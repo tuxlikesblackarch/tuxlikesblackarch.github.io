@@ -1,0 +1,80 @@
+Q1: Which of the following are operators, and which are values?
+* is an operator
+'hello' is a value
+-88.8 is a value
+- is an operator
+/ is an operator
++ is an operator
+5 is a value
+
+Q2: Which of the following is a variable, and which is a string?
+spam is a variable
+'spam' is a string
+
+Q3: Name three data types.
+String
+Integer
+Float
+
+Q4: What is an expression made up of? What do all expressions do?
+An exression is made up of operators and values. All expressions evaluate to a value.
+
+Q5: This chapter introduced assignment statements, like spam = 10. What is the difference between an expression and a statement?
+Expressions evaluate down to a value, statements assign a value to a variable. 
+
+Q6: What does the variable bacon contain after the following code runs?
+bacon = 20
+bacon + 1
+
+The value of bacon should now be 21.
+
+Q7: What should the following two expresions evaluate to?
+'spam' + 'spamspam' would be spamspamspam
+'spam' * 3 would also be spamspamspam
+
+Q8: Why is eggs a valid variable name while 100 is invalid?
+Because you can't start a variable with a number. If you wanted to have the variable 100 you could name it _100 instead.
+
+Q9: What three functions can be used to get the integer, floating-point number, or string version of a value?
+Those three functions would be str(), int(), and float().
+
+Q10: Why does this expression cause an error? How can you fix it?
+'I eat' + 99 + ' burritos.'
+
+This expression fails because you can't add an int to a str. The way to fix it is to put single quotes around the 99 like so '99' then it should concatonate properly. 
+
+Extra credit: Search online for the Python documentation for the len() function. It will be on a web page titled “Built-in Functions.” Skim the  list of other functions Python has, look up what the bin() and hex() functions do, and experiment with them in the interactive shell.
+
+The bin() function converts an integer number to a binary string prefixed with “0b”. The result is a valid Python expression. If integer is not a Python int object, it has to define an __index__() method that returns an integer. Some examples:
+
+bin(3)
+'0b11'
+bin(-10)
+'-0b1010'
+
+If the prefix “0b” is desired or not, you can use either of the following ways.
+
+format(14, '#b'), format(14, 'b')
+('0b1110', '1110')
+f'{14:#b}', f'{14:b}'
+('0b1110', '1110')
+
+See also enum.bin() to represent negative values as twos-complement.
+
+See also format() for more information.
+
+The hex() function converts an integer number to a lowercase hexadecimal string prefixed with “0x”. If integer is not a Python int object, it has to define an __index__() method that returns an integer. Some examples:
+
+hex(255)
+'0xff'
+hex(-42)
+'-0x2a'
+
+If you want to convert an integer number to an uppercase or lower hexadecimal string with prefix or not, you can use either of the following ways:
+
+'%#x' % 255, '%x' % 255, '%X' % 255
+('0xff', 'ff', 'FF')
+format(255, '#x'), format(255, 'x'), format(255, 'X')
+('0xff', 'ff', 'FF')
+f'{255:#x}', f'{255:x}', f'{255:X}'
+('0xff', 'ff', 'FF')
