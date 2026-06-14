@@ -1,0 +1,18 @@
+Chapter 2 - The Help system
+
+Q1. Is the DisplayName parameter of Get-Service positional? 
+	Yes.
+ Correct answer is No
+Q2. How many parameter sets does the Get-Process cmdlet have?
+	6.
+	Correct answer is six parameter sets
+Q3. What PowerShell commands exist for working with event logs?
+	22 or 14 I didn’t do it the same way but I got the same answer.
+	The correct answer is there are 14 commands. I’m not going to list what they all are lol	
+Q4. What’s the PowerShell command for returning a list of PowerShell processes running on your computer?
+	Get-process I misinterpreted the question and though it was asking for the command to show all processes on the system so I get it half right.
+	The correct answer is get-process -Name powershell
+Q5. How do you update the PowerShell help content stored on your computer. 
+	Update-help
+	The correct answer is update-help. 
+
