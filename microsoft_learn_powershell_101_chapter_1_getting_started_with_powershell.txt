@@ -1,0 +1,17 @@
+Chapter 1 - Getting started with PowerShell
+
+Q1. How do you determine what PowerShell version a computer is running?
+	My Answer: Run the command $psversiontable.psversion
+	Correct Answer: Use the $PSVersionTable automatic variable.
+Q2. When should you launch PowerShell Elevated as an administrator?
+	My answer: When you have a command that requires elevation
+Correct Answer: Only when you need to bypass User Account Control (UAC) for tasks that require elevation on the local computer.
+Q3. What's the default execution policy on Windows client computers, and what does it prevent you from doing?
+	My answer: Restricted
+Correct answer: The default execution policy on Windows client systems is Restricted, which prevents running scripts.
+Q4. How do you determine the current PowerShell execution policy setting?
+	My answer: Run the command get-executionpolicy
+	Correct answer: Use Get-ExecutionPolicy to determine the current execution policy.
+Q5. How do you change the PowerShell execution policy?
+	My answer: Run the command set-execution policy
+Correct answer: Use Set-ExecutionPolicy (for example, Set-ExecutionPolicy -ExecutionPolicy RemoteSigned).

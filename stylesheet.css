@@ -1,8 +1,14 @@
-li {
-    color:green;
-    text-decoration:none;
-    font-family: 'Courier New', Courier, monospace;
-}
 img {
     max-width: 100%;
+}
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(75,75,75);
+    font-size: 16pt;
+}
+p {
+    border: 2px solid black;
+}
+a {
+    color: lightgray;
 }
