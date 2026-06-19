@@ -1,0 +1,259 @@
+Entering code into the interactive shell lets you experiment with running instructions one at a time. At the >>> prompt, you can enter expressions made up of values, operators, and other Python code. After running the code, the interactive shell prints the result.
+
+Match the names for questions 1 through 7 to these math operators:
+
++  -  *  /  **  //  %
+
+Q1. Division 
+      Division is /
+Q2. Multiplication 
+   Multiplication is *
+Q3. Subtraction 
+   Subtraction is -
+Q4. Modulo
+   Modulo is %
+Q5. Addition
+   Addition is +
+Q6. Exponentiation 
+      Exponentiation is **
+Q7. Floor Division 
+   Floor Division is //
+
+An expression is the most basic kind of programming instruction in the language. Expressions consist of values (such as 2) and operators (such as +), and they can always evaluate (that is, reduce) down to a single value.
+
+Q8. Is there a difference in how Python interprets these two expressions?
+2 + 2 and 2        + 2
+Nope, Python sees them as the same expression.
+
+Q9. If the expression 26 / 8 evaluates to 3.25, what does the expression 26 // 8 evaluate to? 
+3 because it always returns an int.
+
+Q10. 26 divided by 8 is 3 with a remainder of 2. What does the expression 26 % 8 evaluate to? 
+2 because modulo always returns the remaining value. 8 going into 26 3 times and there are 2 left over. 
+Q11. Write the expression that adds the numbers 1 to 10. (Hint: It begins with 1 + 2 + 3 + and so on.)
+1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10
+Which of the two operators in the following expressions is evaluated first according to Python’s order of operation rules?
+Q12. (4 + 5) * 6
+The expression inside the parenthesis is evaluated first and then the multiplication is evaluated. 
+Q13. 2 ** 3 + 1
+	The exponentiation is evaluated first and then the addition is evaluated.
+Q14. 1 + 2 ** 3
+	The exponentiation is evaluated first and then the addition is evaluated. 
+Q15. (1 + 2) ** 3
+The expression inside the parenthesis is evaluated first and then the exponentiation is evaluated. 
+
+
+Q16. 2 + 4 + 6
+Since they are all addition I believe it just goes from left to right and evaluates the addition. It does not have an influence on the outcome regardless as 10 + 2 is 12 and 6 + 6 is 12 and even 8 + 4 is 12 so no matter what order it evaluates in in this case the answer will be 12 regardless. 
+Which of the following expressions produce errors? (You can enter them into the interactive shell to check.)
+Q17. 2 + 
+Evaluates to a syntax error.
+Q18. 42
+Just evaluates to 42.
+Q19. ((3 + 1) * 2)
+Just evaluates to 8.
+Q20. ((3 + 1 * 2) 
+This fails because it is missing a second parathesis. It gives you a prompt of … to which I just typed q, and it gave me a SyntaxError: invalid syntax. Perhaps you forgot a comma?
+I do not know what the … prompt is asking me to do, I have inquired to my hackerspace programming channel to see what they say and then I will update my answer. 
+The answer is the prompt is waiting for the closing parenthesis and will let you continue to add expressions to the problem until you add that parenthesis or enter two new line characters. 
+Q21. (0)
+	Just evaluates to 0.
+Q22. 1 + 2 3
+	Evaluates to SyntaxError: invalid syntax.
+
+The Integer, Floating-Point, and String Data Types
+A data type is a category for values, and every value belongs to exactly one data type. The integer (or int) data type includes values that are whole numbers. Numbers with a decimal point, such as 3.14, are called floating-point numbers (or floats). Text values are called strings, or strs (pronounced stirs).
+Label the data types of the values in questions 23 through 29 as either int, float, or string. Hint: You can pass them to the type() function in the interactive shell to find the answers, such as type(2) or type('hello').
+
+Q23. 2
+2 is of type int.
+Q24. -2
+-2 is of type int.
+Q25. 2.0
+2.0 is of type float.
+Q26. 'hello'
+‘hello’ is of type str.
+Q27. 2.2
+2.2 is of type float.
+Q28. '2'
+‘2’ is of type str.
+Q29. '2.2'
+‘2.2’ is of type str.
+Q30. What is the difference between the values 10, 10.0, and '10'?
+10 is an int because it’s a whole number. 10.0 is a float because of the decimal point. ‘10’ is a str because of the single quotes around the number.
+
+String Concatenation and Replication
+When the + operator combines two string values, it joins the strings as the string concatenation operator. When the * operator is used on one string value and one integer value, it becomes the string replication operator. What do the following expressions evaluate to?
+
+Q31. 'Hello' + 'Hello' + 'Hello'
+‘HelloHelloHello’
+Q32. 'Hello' * 3
+‘HelloHelloHello’
+Q33. 3 * 'Hello'
+‘HelloHelloHello’
+Q34. (2 * 2) * 'Hello'
+‘HelloHelloHelloHello’
+Q35. '13' + '12'
+‘1312’
+
+Which of the following expressions produce errors?
+
+Q36. 'Forgot the closing quote
+The missing quote creates the following error “SyntaxError: unterminated string literal (detected at line 1)”
+Q37. 'Hello' * 3.0
+The floating-point number causes this error “TypeError: can't multiply sequence by non-int of type 'float'”
+Q38. 'Hello' + 3
+This one does not produce an error.
+Q39. Hello + Hello + Hello
+	Not quoting the Hello’s make python think they are variables and produces this error “NameError: name 'Hello' is not defined”
+
+
+Q40. 'Alice' * 'Bob'
+You cannot multiply something by a non-int type. Producing this error “TypeError: can't multiply sequence by non-int of type 'str'”
+Q41. 'Hello' / 5
+I do not believe you can divide a str, so it produces this error “TypeError: unsupported operand type(s) for /: 'str' and 'int'”
+Q42. 'Hello' / 'Hello'
+Again, I do not believe you can divide a str. It produced this error “TypeError: unsupported operand type(s) for /: 'str' and 'str'”
+
+Storing Values in Variables
+A variable is like a box in the computer’s memory that can store a single value. If you want to use the result of an evaluated expression later in your program, you can save it inside a variable. There are a few rules variable names must follow, and a good variable name describes the data the variable contains.
+The following programs store values in variables. Determine what each program outputs.
+
+
+
+
+Q43.
+nephew = 'Jack'
+print(nephew)
+	The program prints the value Jack to the terminal/screen.
+Q44.
+nephew = 'Jack'
+print('nephew')
+This program sets the value Jack to the variable nephew but then prints the string ‘nephew' because of the single quotes around nephew it does not evaluate as a variable but rather a string. 
+Q45.
+nephew = 'Jack'
+nephew = 'Albert'
+print(nephew)
+Now the value Jack is set then right after nephew is reassigned to the value of Albert, so the program prints the value Albert to the terminal/screen. 
+
+
+
+
+Q46.
+nephew = 'Jack'
+Nephew = 'Albert'
+print(nephew)
+The value of Jack is assigned to (all lowercase) the variable nephew and then the value of Albert is assigned to (capitalized) the variable Nephew. The program then prints the variable nephew, so the value of Jack is printed to the terminal/screen. 
+Why do the following programs cause an error?
+
+Q47.
+nephew = Jack
+print(nephew)
+Due to lack of quotes on the value Jack the program produces this error “NameError: name 'Jack' is not defined”
+Q48.
+nephew = 'Jack'
+print(Jack)
+This program gets the same error as above due to Jack never being assigned a value, so it is not a defined variable. It produces this error “NameError: name 'Jack' is not defined”
+
+
+Q49.
+nephew = 'Jack'
+print(NEPHEW)
+This program produces the same error as the two above. NEPHEW is not a defined variable, so it produces this error. “NameError: name 'NEPHEW' is not defined”
+Q50. print(nephew)
+This program produces the same error as the 3 above. Because nephew is not a defined variable it produces this error “NameError: name 'nephew' is not defined”
+
+Which of the following are valid variable names?
+
+Q51. number_of_cats
+This one is valid because of underscores and not starting with a number.
+Q52. number-of-cats
+	I believe this one is invalid due to the dashes.
+Q53. numberofcats
+	Valid but sometimes hard to read.
+
+Q54. numberOfCats
+	CamelCase is considered valid.
+Q55. _42
+Valid because it starts with an underscore, if it were just a number it would fail.
+Q56. _
+Valid but very vague so I don’t know that I’d recommend using it. 
+Q57. 42
+	Invalid because it starts with a number. 
+
+Your First Program
+While the interactive shell is good for running Python instructions one at a time, to write entire Python programs you’ll need to enter the instructions into the file editor. Chapter 1 of Automate the Boring Stuff with Python includes a “Hello, world” program that uses comments, the print() and input() functions, and the value and operator concepts from the previous section. To further explore these building blocks of programs, label the following as a variable, function call, or string.
+
+Q58. 'hello'
+	This is a string.
+Q59. hello
+	This is a variable.
+Q60. print()
+	This is a function.
+Q61. 'print()'
+	This is a string
+
+Do the following expressions cause an error or no error? If they cause no error, what do they evaluate to?
+
+Q62. int('42')
+	No error. Evaluates to 42.
+Q63. int('forty two')
+This produces an error because you can’t turn a non numeric value from a str to an int. Only numeric values will convert to type int from str. This is the error it produces “ValueError: invalid literal for int() with base 10: 'forty two'”
+Q64. int('Hello')
+Same as above. It produces this error. “ValueError: invalid literal for int() with base 10: 'Hello'”
+Q65. int(-42)
+No error. It’s already type int so it doesn’t really do anything but evaluate back to -42.
+Q66. int(3.1415)
+	No error. It evaluates to 3.
+Q67. float(-42)
+	No error. It evaluates to -42.0
+Q68. str(-42)
+	No error. It evaluates to ‘-42’.
+Q69. str(3.1415)
+	No error. It evaluates to '3.1415’.
+Q70. str('Hello') 
+	No error. It evaluates to ‘Hello’. It was already a str so it didn’t really do anything. 
+Q71. str(float(int(3.14)))
+	No error. It evaluates to ‘3.0’. 
+Q72. str(3)
+	No error. It evaluates to ‘3’.
+Q73. str(3.0)
+	No error. It evaluates to ‘3.0’.
+Answer the following questions to further your understanding of the techniques used in the “Hello, world” program.
+
+
+
+Q74. Why does this two-line program cause an error?
+     number_of_cats = 4
+     print('I have ' + number_of_cats)
+     It produces this error: TypeError: can only concatenate str (not "int") to str. Which means you can’t add a str to an int. If you wanted to do it correctly you could do number_of_cats = ‘4’ or print(‘I have ‘ + str(number_of_cats))
+Q75. Does round(4.9) evaluate to the integer 5 or the float 5.0?
+	It evaluates to the integer 5.
+Q76. Describe what the abs() function returns.
+	It returns the absolute value of a number.
+Q77. What does abs(5) return?
+	5
+Q78. What does abs(-5) return?
+	5
+How Computers Store Data with Binary Numbers
+Binary, also called the base-2 number system, can represent all of the same numbers that our more familiar base-10 decimal number system can. Decimal has 10 digits, 0 through 9, but binary has only 0 and 1. By representing text, image, audio, and other kinds of data as binary numbers, computers can store and process the data. Answer the following questions about data representation.
+
+Q79. Why do computers use the base-2 binary number system instead of the more familiar base-10 decimal system humans use?
+	Because computers can read 1s and 0s not base-10 decimals.
+Q80. How many bits are in 1 byte?
+	8.
+Determine how many bytes the units in 81 through 84 represent, both as an exponent like 210 and a whole number like 1,024. You can enter an expression like 2 ** 10 into the interactive shell to calculate 210.
+
+Q81. Kilobyte
+	210 – 1024
+Q82. Megabyte
+	220 - 1048576
+Q83. Gigabyte
+	230 – 1073741824
+Q84. Terabyte
+	240 - 1099511627776
+Q85. Decimal 2 is 10 in binary. What is decimal 3 in binary?
+	11
+Q86. Decimal 7 is 111 in binary. What is decimal 8 in binary?
+	0001
+
