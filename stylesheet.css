@@ -1,3 +1,7 @@
+div {
+    display: flex;
+    justify-content: center;
+}
 img {
     max-width: 100%;
 }
@@ -13,14 +17,14 @@ article {
     margin:16pt auto;
     padding:16pt;
     border: 2px solid rgb(255,255,255);
-    max-width:960px;
+    max-width: 960px;
     background-color: rgba(0,0,0,0.95);
 }
 p {
     color: rgb(0,255,0);
 }
 a {
-    color:yellow;
+    color: white;
 }
 h1 {
     color: rgb(0,255,0)
