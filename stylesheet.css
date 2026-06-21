@@ -9,13 +9,13 @@ body {
     font-family: 'Courier New', Courier, monospace;
     background-color: rgb(0,0,0);
     font-size: 16pt;
-    margin:0;
-    padding:0;
-    background-image:url("images/424px-mascot_konqi-dev-kde-transparent.png");
+    margin: 0;
+    padding: 0;
+    background-image: url("images/424px-mascot_konqi-dev-kde-transparent.png");
 }
 article {
-    margin:16pt auto;
-    padding:16pt;
+    margin: 16pt auto;
+    padding: 16pt;
     border: 2px solid rgb(255,255,255);
     max-width: 960px;
     background-color: rgba(0,0,0,0.95);
@@ -23,11 +23,39 @@ article {
 p {
     color: rgb(0,255,0);
 }
+p.menu {
+    text-align: center;
+    border: 2px solid rgb(255,255,255);
+    max-width: 960px;
+    background-color: rgba(0,0,0,0.95) ;
+    margin: 16pt auto;
+    padding: 16pt;
+    font-size: 24pt;
+}
+p.imglinks {
+    text-align: center;
+}
+}
 a {
-    color: white;
+    color: rgb(240, 53, 240);
 }
 h1 {
     color: rgb(0,255,0)
+}
+h1#welcome {
+    text-align: center;
+}
+h1#blog {
+    text-align: center;
+}
+h1#writeups {
+    text-align: center;
+}
+h1.blogheaders {
+    text-align: center;
+}
+h1.writeupsheaders {
+    text-align: center;
 }
 h2 {
     color: rgb(0,255,0)
