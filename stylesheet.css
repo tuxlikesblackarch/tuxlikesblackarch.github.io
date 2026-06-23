@@ -44,6 +44,11 @@ h1 {
 }
 h1#welcome {
     text-align: center;
+    border: 2px solid rgb(255,255,255);
+    background-color: rgba(0,0,0,0.95);
+    max-width: 960px;
+    margin: 16pt auto;
+    padding: 16pt;
 }
 h1#blog {
     text-align: center;
