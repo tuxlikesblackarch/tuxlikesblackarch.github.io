@@ -35,7 +35,6 @@ p.menu {
 p.imglinks {
     text-align: center;
 }
-}
 a {
     color: rgb(240, 53, 240);
 }
@@ -56,10 +55,22 @@ h1#blog {
 h1#writeups {
     text-align: center;
 }
+h1#tutorials {
+    text-align: center;
+}
+h1#contact {
+    text-align: center;
+}
 h1.blogheaders {
     text-align: center;
 }
 h1.writeupsheaders {
+    text-align: center;
+}
+h1.tutorialsheaders {
+    text-align: center;
+}
+h1.contactheaders {
     text-align: center;
 }
 h2 {
