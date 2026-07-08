@@ -1,9 +1,12 @@
-div {
-    display: flex;
-    justify-content: center;
+a {
+    color: rgb(240, 53, 240);
 }
-img {
-    max-width: 100%;
+article {
+    margin: 16pt auto;
+    padding: 16pt;
+    border: 2px solid rgb(255,255,255);
+    max-width: 960px;
+    background-color: rgba(0,0,0,0.95);
 }
 body {
     font-family: 'Courier New', Courier, monospace;
@@ -13,12 +16,63 @@ body {
     padding: 0;
     background-image: url("images/424px-mascot_konqi-dev-kde-transparent.png");
 }
-article {
-    margin: 16pt auto;
-    padding: 16pt;
-    border: 2px solid rgb(255,255,255);
-    max-width: 960px;
-    background-color: rgba(0,0,0,0.95);
+div#arch_fluxbox_menu_image {
+    display: flex;
+    justify-content: center;
+}
+div.blackarch_content {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+div.container {
+    max-width: 1200px;
+    margin: auto;
+}
+div.navbar_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+div.top_nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+h1 {
+    color: rgb(0,255,0)
+}
+h1#blog {
+    text-align: center;
+}
+h1#writeups {
+    text-align: center;
+}
+h1#tutorials {
+    text-align: center;
+}
+h1#contact {
+    text-align: center;
+}
+h1.blogheaders {
+    text-align: center;
+}
+h1.writeupsheaders {
+    text-align: center;
+}
+h1.tutorialsheaders {
+    text-align: center;
+}
+h1.contactheaders {
+    text-align: center;
+}
+h2 {
+    color: rgb(0,255,0)
+}
+img {
+    max-width: 100%;
+    iamge
 }
 p {
     color: rgb(0,255,0);
@@ -30,38 +84,20 @@ p.menu {
     background-color: rgba(0,0,0,0.95) ;
     margin: 16pt auto;
     padding: 16pt;
-    font-size: 24pt;
+    font-size: 36pt;
 }
 p.imglinks {
     text-align: center;
 }
+ul.nav_links {
+    display: flex; 
+    gap: 20px;
+    background-color: rgba(0,0,0,0.50);
+    font-size: 16pt;
 }
-a {
-    color: rgb(240, 53, 240);
+ul.nav_links a {
+    text-decoration: none;
 }
-h1 {
-    color: rgb(0,255,0)
-}
-h1#welcome {
-    text-align: center;
-    border: 2px solid rgb(255,255,255);
-    background-color: rgba(0,0,0,0.95);
-    max-width: 960px;
-    margin: 16pt auto;
-    padding: 16pt;
-}
-h1#blog {
-    text-align: center;
-}
-h1#writeups {
-    text-align: center;
-}
-h1.blogheaders {
-    text-align: center;
-}
-h1.writeupsheaders {
-    text-align: center;
-}
-h2 {
-    color: rgb(0,255,0)
+ul.nav_links li {
+    list-style: none;
 }
