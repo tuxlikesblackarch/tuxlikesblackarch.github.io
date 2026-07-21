@@ -17,7 +17,6 @@ body {
     background-image: url("images/424px-mascot_konqi-dev-kde-transparent.png");
 }
 div#arch_fluxbox_menu_image {
-    display: flex;
     justify-content: center;
 }
 div.blackarch_content {
@@ -26,45 +25,18 @@ div.blackarch_content {
     width: 100%;
 }
 div.container {
-    max-width: 1200px;
     margin: auto;
 }
-div.navbar_content {
+div.welcome_statement {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-}
-div.top_nav {
-    display: flex;
-    width: 100%;
-    align-items: center;
+    width: 90%;
 }
 h1 {
     color: rgb(0,255,0)
 }
-h1#blog {
-    text-align: center;
-}
-h1#writeups {
-    text-align: center;
-}
-h1#tutorials {
-    text-align: center;
-}
-h1#contact {
-    text-align: center;
-}
-h1.blogheaders {
-    text-align: center;
-}
-h1.writeupsheaders {
-    text-align: center;
-}
-h1.tutorialsheaders {
-    text-align: center;
-}
-h1.contactheaders {
+h1#headers {
     text-align: center;
 }
 h2 {
@@ -88,16 +60,4 @@ p.menu {
 }
 p.imglinks {
     text-align: center;
-}
-ul.nav_links {
-    display: flex; 
-    gap: 20px;
-    background-color: rgba(0,0,0,0.50);
-    font-size: 16pt;
-}
-ul.nav_links a {
-    text-decoration: none;
-}
-ul.nav_links li {
-    list-style: none;
 }
