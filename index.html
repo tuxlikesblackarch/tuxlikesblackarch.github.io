@@ -32,6 +32,42 @@
             <button class="close">X</button>
         </header>
         <div>
+            <form id="goat-editor">
+                <ul>
+                    <li>
+                        <label for="name">goat name</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            maxlength="20"
+                        />
+                    </li>
+                    <li>
+                        <label for="power_level">power level</label>
+                        <input
+                            type="number"
+                            id="power_level"
+                            name="power_level"
+                            min="0"
+                            max="100"
+                            step="0.1"
+                        />
+                    </li>
+                    <li>
+                        <label for="is_grumpy">is grumpy</label>
+                        <input
+                            type="checkbox"
+                            id="is_grumpy"
+                            name="is_grumpy"
+                            checked
+                        />
+                    </li>
+                </ul>
+                <input type="submit"/>
+            </form>
+        </div>
+        <div class="goat-holder">
            <img src="https://i.redd.it/uuvnxxpq8oeh1.jpeg" alt="two goats in chairs"> 
            <img src="https://i.redd.it/uuvnxxpq8oeh1.jpeg" alt="two goats in chairs">
            <img src="https://i.redd.it/uuvnxxpq8oeh1.jpeg" alt="two goats in chairs">
@@ -251,6 +287,7 @@
     </article>
     <article>
         <h1 id="headers">Test Contact</h1>
+        <p>This is a test</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id mattis orci. Donec eleifend ante tincidunt, hendrerit dolor vel, laoreet velit. Ut a libero quis arcu fermentum interdum ac eu enim. Nulla porta et lacus eu tincidunt. In ullamcorper ligula diam, nec viverra lectus elementum ac. Sed cursus vehicula nulla, eget rhoncus ipsum ornare non. Quisque placerat neque vulputate urna ullamcorper cursus. Proin vel ligula ac eros pretium ullamcorper non nec sem. Vivamus eleifend porttitor elementum. Curabitur dictum bibendum laoreet. Nulla eget tempor nisi, et tincidunt felis. Donec auctor augue non neque aliquam volutpat. Nulla ultricies porta mauris eget tincidunt. Donec mattis turpis in augue mattis rutrum. Pellentesque ultrices quis magna eleifend imperdiet. Etiam ut euismod mi.
 
         Aenean ac luctus nisi. Proin sit amet urna vitae enim congue placerat. Maecenas rutrum quam eros, quis tempus dui scelerisque a. Praesent id sodales eros, a laoreet augue. Maecenas ac quam venenatis, fermentum nulla in, congue justo. Cras ultricies lorem eleifend turpis tempor tincidunt. Phasellus consectetur dolor urna, quis dapibus nunc porta at. Donec orci libero, eleifend nec venenatis a, laoreet quis ipsum. Duis convallis massa volutpat, sagittis nibh ut, faucibus purus.
@@ -261,5 +298,6 @@
 
         Cras ac egestas ipsum, nec hendrerit leo. Curabitur eu ullamcorper turpis. Phasellus vehicula aliquet velit at imperdiet. Donec efficitur congue dui ultricies luctus. Sed sit amet venenatis turpis, in consectetur nibh. In ultricies nisl quis libero aliquet, sed convallis turpis cursus. Etiam sed massa vel ex imperdiet sodales. Nulla id purus nec purus egestas tempor. Nulla facilisi. Vestibulum sit amet commodo neque. Aliquam neque purus, volutpat non facilisis nec, ultrices non augue. Maecenas placerat neque vitae nulla euismod, ac tincidunt ex ornare. Nam purus nibh, lobortis vel dignissim sed, placerat sit amet risus. Maecenas vitae mi et nibh mollis elementum..</p>
     </article>
+    <script src="goat_form.js"></script>
 </body>
 </html>

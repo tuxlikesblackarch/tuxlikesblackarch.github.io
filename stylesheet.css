@@ -28,12 +28,14 @@ div.container {
     margin: auto;
 }
 .window {
-    background-color: #00FF00;
-
+    background-color: #0F0;
+    margin: 32px;
+    border: 4px solid #080;
 }
 .window header {
-    background-color: #000000;
+    background-color: #000;
     position: relative;
+    color: #00FF00;
 }
 .window header button {
     appearance: none;
@@ -45,6 +47,7 @@ div.container {
     border:0;
     border-left:1px solid #8883;
     background-color: transparent;
+    color: inherit;
 }
 .window header button:hover {
     background-color: #8883;
@@ -55,13 +58,9 @@ div.container {
 .window header button.minimize {
     right: 96px; 
 }
-.window > div > img {
-    display: block;
-    width: 100%;
-    /* height: 60px; */
-}
 .window footer {
     background-color: #0000FF;
+    color: #FFFFFF;
 }
 div.welcome_statement {
     display: flex;
@@ -80,6 +79,12 @@ h2 {
 }
 img {
     max-width: 100%;
+}
+.goat-holder {
+    text-align: center;
+}
+.goat-holder img { 
+    max-width: 300px;
 }
 p {
     color: rgb(0,255,0);
